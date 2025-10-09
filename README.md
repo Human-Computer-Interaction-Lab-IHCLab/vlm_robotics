@@ -2,6 +2,14 @@
 
 **[📘 Read this in Spanish / Leer en español](README_ES.md)**
 
+## 📚 Citation
+
+If you use or reference this repository, please cite the companion paper:
+
+> **Gudiño-Lau, J., Durán-Fonseca, M., Anido-Rifón, L. E., & Santana-Mancilla, P. C.**  
+> *A Symmetry-Informed Multimodal LLM-Driven Approach to Robotic Object Manipulation: Lowering Entry Barriers in Mechatronics Education*  
+> (Under review in **Symmetry**)
+
 ---
 
 This repository provides a **reproducible hybrid framework** that integrates a **multimodal Large Language Model (LLM/VLM)** as a semantic reasoning module with **deterministic inverse kinematics** for robotic object manipulation.  
@@ -38,3 +46,8 @@ The system is implemented on the **Yahboom DOFBOT** educational arm and demonstr
 - Packages:
   ```bash
   pip install opencv-python openai
+
+## ⚖️ License
+
+This project is released under the **MIT License**, allowing free use, modification, and redistribution for educational and research purposes.  
+See the [LICENSE](LICENSE) file for details.

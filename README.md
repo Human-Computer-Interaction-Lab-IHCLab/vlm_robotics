@@ -1,14 +1,20 @@
 # Symmetry-Informed LLM/VLM + Deterministic Control for Robotic Object Manipulation (Educational DOFBOT)
 
+🎥 **Video**  
+[![Generative AI Meets Robotics: The Symmetry-Informed DOFBOT](https://img.youtube.com/vi/2ACQrcsiW0E/0.jpg)](https://youtu.be/2ACQrcsiW0E)  
+*Click the image to watch on YouTube.*
+
 **[📘 Read this in Spanish / Leer en español](README_ES.md)**
+
+---
 
 ## 📚 Citation
 
-If you use or reference this repository, please cite the companion paper:
+If you use or reference this repository, please cite the published paper:
 
 > **Gudiño-Lau, J., Durán-Fonseca, M., Anido-Rifón, L. E., & Santana-Mancilla, P. C.**  
-> *A Symmetry-Informed Multimodal LLM-Driven Approach to Robotic Object Manipulation: Lowering Entry Barriers in Mechatronics Education*  
-> (Under review in **Symmetry**)
+> *A Symmetry-Informed Multimodal LLM-Driven Approach to Robotic Object Manipulation: Lowering Entry Barriers in Mechatronics Education.*  
+> **Symmetry**, 17(10), 1756. [https://doi.org/10.3390/sym17101756](https://doi.org/10.3390/sym17101756)
 
 ---
 
@@ -22,14 +28,14 @@ The system is implemented on the **Yahboom DOFBOT** educational arm and demonstr
 ## 🧩 Overview
 
 ### Robot Side (`MainRobot.py`)
-- Initializes and homes the robotic arm.
-- Captures a camera image and exposes it through two TCP servers:
-  - **Image Server** on port `6103`.
+- Initializes and homes the robotic arm.  
+- Captures a camera image and exposes it through two TCP servers:  
+  - **Image Server** on port `6103`.  
   - **Command Server** on port `6104`.
 
 ### Client Side (`RuedaColorEs.py`)
-- Connects to the robot’s image server to retrieve the latest frame.
-- Sends both **text and image** to an OpenAI multimodal model (`gpt-4o`).
+- Connects to the robot’s image server to retrieve the latest frame.  
+- Sends both **text and image** to an OpenAI multimodal model (`gpt-4o`).  
 - Interprets the model’s reply (e.g., “lower right”) and sends the corresponding motion commands to the robot via TCP.
 
 ---
@@ -37,15 +43,10 @@ The system is implemented on the **Yahboom DOFBOT** educational arm and demonstr
 ## ⚙️ Requirements
 
 ### Hardware
-- Yahboom DOFBOT 6-DoF arm (or compatible)
-- Camera (USB/CSI)
-- Local network connection between robot and client
+- Yahboom DOFBOT 6-DoF robotic arm (or compatible)  
+- USB or CSI camera  
+- Local network connection between robot and client  
 
-### Software
-- Python 3.8+
-- Packages:
-  ```bash
-  pip install opencv-python openai
 
 ## ⚖️ License
 
